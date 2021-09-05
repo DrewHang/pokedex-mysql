@@ -4,12 +4,20 @@
   "description": "Fullstack Review",
   "main": "server/index.js",
   "scripts": {
-
+    "start": "nodemon server/index.js",
+    "start-dev": "webpack --config webpack.config.js --mode development -w"
   },
   "keywords": [],
   "author": "Josh Hertz",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
